@@ -1,1 +1,70 @@
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV4PLo8X61c0QXTdo_HUdNWKWhlLBfutt5a2ug2E2uB67wgQ/viewform?embedded=true" width="640" height="1677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Google Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eef2f7, #d6e4ff);
+    }
+
+    .form-wrapper {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
+      border-radius: 25px;
+      border: 3px solid #007bff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #007bff;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 2000px;
+      height: 0;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: inset 0 0 0 2px #007bff;
+      background: #f0f8ff;
+    }
+
+    .form-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .form-wrapper {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <h1>Fill Out the Form Below</h1>
+    <div class="form-embed">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV4PLo8X61c0QXTdo_HUdNWKWhlLBfutt5a2ug2E2uB67wgQ/viewform?embedded=true">Loading…</iframe>
+    </div>
+  </div>
+</body>
+</html>
